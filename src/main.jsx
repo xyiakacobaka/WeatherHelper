@@ -1,10 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const root = createRoot(document.getElementById('root'));
+
+function MyComponent() {
+  fetch("https://api.openweathermap.org/geo/1.0/direct?q=Moskow&limit=5&appid=e65a15061c79d126ccd4123c097fedba")
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
+
+root.render(
+  <div id='cityContainer'>
+    <input type="city" placeholder="Погода какого города вас интересует?"/>
+  </div>
 );
