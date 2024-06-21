@@ -1,25 +1,40 @@
 html{
-  overflow: hidden
+  overflow: hidden;
 }
 body{
   font-size: 2.7vh;
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0px;
 }
 #bg {
   position: fixed;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: inherit;
+  background: url('./src/images/1172.jpg');
   z-index: -9999;
+  background-size: cover;
 }
 #root{
   width: 100%;
   height: 100vh;
   position: absolute;
   z-index: 1;
+}
+#searchLine{
+  display: flex;
+  position: fixed;
+  top: 10%;
+  width: 100vw;
+  height: 6.1vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#button{
+  position: relative;
+  left: 80%;
 }
 #cityContainer{
   align-content: center;  
@@ -39,7 +54,7 @@ input{
   font-family: inherit;
   outline:none;
   width: 96%;
-  padding: 2%;
+  padding: 1.3%;
   height: 100%;
   border: none;
   border-radius: inherit;
