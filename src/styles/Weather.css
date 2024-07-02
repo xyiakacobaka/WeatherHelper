@@ -1,0 +1,40 @@
+#mainWindow{
+    width: 70%;
+    height: 60vh;
+    border-radius: 5vw;
+    backdrop-filter: blur(0.5vw);
+    background-color: rgba(0,0,0, 0.1);
+    margin: auto;
+    padding-top: 3vh;
+    font-size: 2vw;
+    margin-top: 3%;
+    text-align: center;
+    color: cornsilk;
+}
+#cityName{
+    margin: auto;
+}
+#weatherIcon{
+    width: 10vw;
+    height: 10vh;
+    border: 0; border-width: 0; border: none; border-style: none;
+}
+#daysContainer{
+    width: 90%;
+    margin: auto;
+    display: flex;    
+    justify-content: center;
+}
+.altWindow{
+    background-color: rgba(0,0,0, 0.1);
+    backdrop-filter: blur(0.5vw);   
+    border-radius: 1vw;
+    width: 20%;
+    height: 26vh;
+    margin: 1vw;
+    font-size: 1.5vw;
+}
+img{
+    width: 7vw;
+    height: 7vh;
+}

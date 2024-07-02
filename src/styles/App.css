@@ -1,0 +1,17 @@
+body {   
+    background-image: url('/src/assets/1172.jpg');      
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #464646;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+#main{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
